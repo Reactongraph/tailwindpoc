@@ -3,13 +3,13 @@ import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testi
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.flexCenter} fixed w-full z-50`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`bg-primary ${styles.flexStart} mt-14`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
       </div>

@@ -138,3 +138,18 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+@keyframes circularMotion { 
+  0% { 
+      transform: rotate(0deg)  
+            translateY(30px) rotate(0deg); 
+  } 
+  100% { 
+      transform: rotate(360deg)  
+            translateY(30px) rotate(-360deg); 
+  } 
+} 
+.animate-circularMotion {
+  animation: circularMotion 5s infinite linear;
+}
+
