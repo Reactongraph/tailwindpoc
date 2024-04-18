@@ -6,11 +6,13 @@ const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
+        <a href="#">
         <img
           src={logo}
           alt="hoobank"
           className="w-[266px] h-[72.14px] object-contain"
         />
+        </a>
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           A new way to make the payments easy, reliable and secure.
         </p>
@@ -50,13 +52,13 @@ const Footer = () => (
             key={social.id}
             src={social.icon}
             alt={social.id}
-            className={`w-[21px] h-[21px] object-contain cursor-pointer ${
+            className={`w-[38px] h-[38px] object-contain cursor-pointer ${  
               index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
-            }`}
+            } hover:border-[3px] hover:border-blue-400 p-2 rounded-full`}
             onClick={() => window.open(social.link)}
           />
         ))}
-      </div>
+      </div>   
     </div>
   </section>
 );
